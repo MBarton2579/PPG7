@@ -21,11 +21,31 @@ public:
 	int getLevel() const;
 	int getHealth() const;
 
+	virtual int attack() const = 0 {
+
+	}
+
+	virtual void defend(int damage) = 0 {
+
+	}
+
+	virtual void update(Player& player, std::vector<Monster>& monsters) = 0 {
+
+	}
+
 protected:
 	Type name{ Type::numTypes };
 	int strength{ 0 };
 	int health{ 0 };
 	int level{ 0 };
+
+	int damageDone(int modification) const {
+
+	}
+
+	int damageTaken(int damageDone, int AC) {
+
+	}
 
 };
 

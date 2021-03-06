@@ -139,7 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Solution\Goal.7.cpp" />
+    <ClCompile Include="..\..\Solution\Item.cpp" />
+    <ClCompile Include="..\..\Solution\Monster.cpp" />
+    <ClCompile Include="..\..\Solution\Object.cpp" />
+    <ClCompile Include="..\..\Solution\Player.cpp" />
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Solution\Item.h" />
+    <ClInclude Include="..\..\Solution\Monster.h" />
+    <ClInclude Include="..\..\Solution\Object.h" />
+    <ClInclude Include="..\..\Solution\Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
