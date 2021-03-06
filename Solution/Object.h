@@ -4,7 +4,6 @@
 #include <map>
 #include <random>
 
-
 class Object
 {
 public:
@@ -22,6 +21,7 @@ public:
 	int getHealth() const;
 
 	virtual int attack() const = 0 {
+		int AC = 0;
 
 	}
 
@@ -30,6 +30,31 @@ public:
 	}
 
 	virtual void update(Player& player, std::vector<Monster>& monsters) = 0 {
+
+		std::cout << "What do you do? (a)ttack (h)eal ";
+		char command{ 'x' };
+		std::cin >> command;
+		switch (command)
+		{
+		case 'a':
+		{
+			std::cout << "Which Monster: ";
+			int monsterNum{ 0 };
+			std::cin >> monsterNum;
+			if (monsterNum > 0 && monsterNum <= monsters.size())
+			{
+
+				monsters[monsterNum - 1].defense(player.damage());
+			}
+			break;
+		}
+		case 'h':
+			player.heal();
+			break;
+		default:
+			std::cout << "please enter a or h" << std::endl;
+			break;
+		}
 
 	}
 

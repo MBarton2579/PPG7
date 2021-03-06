@@ -144,7 +144,7 @@
     <ClCompile Include="..\..\Solution\Monster.cpp" />
     <ClCompile Include="..\..\Solution\Object.cpp" />
     <ClCompile Include="..\..\Solution\Player.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Goal.6.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Solution\Item.h" />
